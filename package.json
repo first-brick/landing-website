@@ -1,0 +1,29 @@
+{
+  "name": "first-brick-landing-website",
+  "version": "1.0.0",
+  "description": "First Brick Portfolio",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "content-filter": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "g": "^2.0.1",
+    "logger": "0.0.1",
+    "mongodb": "^3.4.1",
+    "mysql": "^2.17.1",
+    "nodemailer": "^6.3.1",
+    "sanitize": "^2.1.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Pradipta",
+  "license": "ISC"
+}
