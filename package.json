@@ -1,5 +1,5 @@
 {
-  "name": "first-brick",
+  "name": "first-brick-landing-website",
   "version": "1.0.0",
   "description": "First Brick Portfolio",
   "main": "app.js",
@@ -24,6 +24,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
-  "author": "Nasir",
+  "author": "Pradipta",
   "license": "ISC"
 }
