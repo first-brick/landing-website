@@ -15,8 +15,8 @@ module.exports.sendMail = function(mailInfo){
     return new Promise(function(resolve, reject){
         var mailOptions = {
             from: mailInfo.email,
-            to: 'askfirstbrick@gmail.com',
-            cc: ['debangasarma13@gmail.com'],
+            to: process.env.to,
+            cc: process.env.cc.split(','),
             subject: "New Contact message from: "+mailInfo.name+" ("+mailInfo.email+")",
             text: mailInfo.message
           };
