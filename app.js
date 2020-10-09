@@ -10,9 +10,7 @@ var filter = require('content-filter');
 const sanitizer = require('sanitize')();
 const bodyParser = require("body-parser");
 const layouts = require('express-ejs-layouts');
-// const dbService = require("./services/db_services");
 const emailService = require('./services/emailService')
-// const contactService = require("./services/contactService");
 var urlencodedParser = bodyParser.urlencoded({extended: false})
 var logger = require('logger').createLogger('logs.log'); // logs to a file
 
