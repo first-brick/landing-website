@@ -31,12 +31,6 @@ app.use(express.static(path.join(__dirname, 'assets')));
 // set layout
 app.use(layouts);
 
-// db connection
-app.use(function (req, res, next) {
-    res.locals.connection = dbService.connection;
-    next();
-});
-
 // enable cors
 app.use(cors())
 
