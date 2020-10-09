@@ -17,6 +17,8 @@ Dev version of it is being deployed there from a forked branch of one of our dev
 3. `npm install`
 4. `node app.js`
 
+After that head to your browser and open `localhost:3000`
+
 #### Email service configuration
 
 In order to use email service you need to create `.env` file and put there your config for nodemailer.
