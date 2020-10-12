@@ -260,7 +260,7 @@
                 </div>
               </div>
               <div class="g-recaptcha" name ="captchamsg" style="margin-bottom:10px ;" data-sitekey="6LeQFNYZAAAAANZJ1HDS6f4enSq6YdcLhNhOruZB"></div>
-              <span id="captchamsg" style="color:red" ></span>              <ul class="actions">
+              <ul class="actions">
                 <li><a href="" class="button submit">Send Message</a></li>
               </ul>
             </form>
@@ -276,7 +276,7 @@
                 var response = grecaptcha.getResponse();
                  console.log(name);
                 if(!response) {
-                  document.getElementById('captchamsg').innerHTML="Please Verify the Captcha";
+                  alert("Please Verify the Captcha");
                   console.log("Captcha error")
                   return false;
                 }                
