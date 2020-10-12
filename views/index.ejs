@@ -17,6 +17,7 @@
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-178645442-1"
   ></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -258,6 +259,7 @@
                   ></textarea>
                 </div>
               </div>
+              <div class="g-recaptcha" name ="captchamsg" style="margin-bottom:10px ;" data-sitekey="6LeQFNYZAAAAANZJ1HDS6f4enSq6YdcLhNhOruZB"></div>
               <ul class="actions">
                 <li><a href="" class="button submit">Send Message</a></li>
               </ul>
@@ -271,7 +273,13 @@
                 var email = $("#email").val();
                 var phone = $("#phone").val();
                 var message = $("#message").val();
-                console.log(name);
+                var response = grecaptcha.getResponse();
+                 console.log(name);
+                if(!response) {
+                  alert("Please Verify the Captcha");
+                  console.log("Captcha error")
+                  return false;
+                }                
                 if (!name || !email || !phone || !message) {
                   console.log("error");
                   alert("Please fill all the fields");
