@@ -3373,7 +3373,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #a6a6a6;
 		}
 
 		.wrapper.style1-alt {
@@ -4007,15 +4007,17 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.jpg");
+		background-image: url("images/intro-3.jpg");
+		background-blend-mode: overlay;
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: cover;
 	}
 
+
 		#intro p {
-			color: navajowhite;
-			font-size: 1.25em;
+			font-size: 1.25em; 
+			color:#14042f;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -4035,7 +4037,7 @@ input, select, textarea {
 			}
 
 		#intro h1 {
-			color: aliceblue;
+			color: #e5e7ff;
 		}
 
 		@media screen and (max-width: 1280px) {
